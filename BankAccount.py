@@ -13,7 +13,7 @@ class BankAccount:
         self.__balance -= amount
     #인스턴스의 문자열(상태)
     def __str__(self):
-        return "{0} , {1} , {2}".format(self.__id, \
+        return "{0} , {1} , {2}".format(self.__id,
             self.__name, self.__balance)
 
 #인스턴스 객체를 생성
@@ -23,3 +23,4 @@ account1.withdraw(3000)
 print(account1)
 #읽기
 #print(account1.__balance)
+

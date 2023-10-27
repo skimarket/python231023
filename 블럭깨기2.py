@@ -1,5 +1,3 @@
-#cmd 
-#pip install pygame
 import pygame
 import sys
 import random
@@ -64,7 +62,7 @@ while not game_over:
     if ball.colliderect(paddle) and ball_speed_y > 0:
         ball_speed_y = -ball_speed_y
 
-    for brick in bricks:
+    for brick in bricks[:]:
         if ball.colliderect(brick):
             bricks.remove(brick)
             ball_speed_y = -ball_speed_y
